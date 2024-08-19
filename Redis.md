@@ -33,3 +33,7 @@ docker run \
 -v ./redis/log:/var/log/redis \
 redis redis-server /usr/local/etc/redis/redis.conf
 ~~~
+4. 以终端的形式访问 Redis
+~~~
+docker exec -it my-redis redis-cli
+~~~
